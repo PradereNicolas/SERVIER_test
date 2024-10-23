@@ -1,0 +1,259 @@
+[
+  {
+    "id": "OPTIMIZED.PUBLICATION_0",
+    "type": "CLINICAL_TRIAL",
+    "value": "NCT04153396",
+    "parents": [{ "id": "OPTIMIZED.DRUGS_6", "type": "DRUG", "date": null }]
+  },
+  {
+    "id": "OPTIMIZED.JOURNAL_1",
+    "type": "JOURNAL",
+    "value": "H\u00f4pitaux Universitaires de Gen\u00e8ve",
+    "parents": []
+  },
+  {
+    "id": "OPTIMIZED.DRUGS_6",
+    "type": "DRUG",
+    "value": "BETAMETHASONE",
+    "parents": [
+      {
+        "id": "OPTIMIZED.JOURNAL_8",
+        "type": "JOURNAL",
+        "date": "2020-01-01 00:00:00"
+      },
+      {
+        "id": "OPTIMIZED.JOURNAL_9",
+        "type": "JOURNAL",
+        "date": "2020-01-01 00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "OPTIMIZED.PUBLICATION_1",
+    "type": "CLINICAL_TRIAL",
+    "value": "NCT01967433",
+    "parents": [{ "id": "OPTIMIZED.DRUGS_0", "type": "DRUG", "date": null }]
+  },
+  {
+    "id": "OPTIMIZED.JOURNAL_0",
+    "type": "JOURNAL",
+    "value": "Journal of emergency nursing",
+    "parents": [
+      {
+        "id": "OPTIMIZED.PUBLICATION_2",
+        "type": "CLINICAL_TRIAL",
+        "date": "2020-01-01 00:00:00"
+      },
+      {
+        "id": "OPTIMIZED.PUBLICATION_3",
+        "type": "CLINICAL_TRIAL",
+        "date": "2020-01-01 00:00:00"
+      },
+      {
+        "id": "OPTIMIZED.PUBLICATION_9",
+        "type": "PUBMED",
+        "date": "2019-01-01 00:00:00"
+      },
+      {
+        "id": "OPTIMIZED.PUBLICATION_4",
+        "type": "CLINICAL_TRIAL",
+        "date": "2020-04-27 00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "OPTIMIZED.DRUGS_0",
+    "type": "DRUG",
+    "value": "DIPHENHYDRAMINE",
+    "parents": [
+      { "id": "OPTIMIZED.JOURNAL_0", "type": "JOURNAL", "date": null },
+      {
+        "id": "OPTIMIZED.JOURNAL_2",
+        "type": "JOURNAL",
+        "date": "2019-01-02 00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "OPTIMIZED.PUBLICATION_2",
+    "type": "CLINICAL_TRIAL",
+    "value": "NCT04189588",
+    "parents": [{ "id": "OPTIMIZED.DRUGS_0", "type": "DRUG", "date": null }]
+  },
+  {
+    "id": "OPTIMIZED.PUBLICATION_3",
+    "type": "CLINICAL_TRIAL",
+    "value": "NCT04237091",
+    "parents": [{ "id": "OPTIMIZED.DRUGS_0", "type": "DRUG", "date": null }]
+  },
+  {
+    "id": "OPTIMIZED.PUBLICATION_4",
+    "type": "CLINICAL_TRIAL",
+    "value": "NCT04188184",
+    "parents": [{ "id": "OPTIMIZED.DRUGS_4", "type": "DRUG", "date": null }]
+  },
+  {
+    "id": "OPTIMIZED.DRUGS_4",
+    "type": "DRUG",
+    "value": "EPINEPHRINE",
+    "parents": [
+      {
+        "id": "OPTIMIZED.JOURNAL_6",
+        "type": "JOURNAL",
+        "date": "2020-02-01 00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "OPTIMIZED.PUBLICATION_5",
+    "type": "CLINICAL_TRIAL",
+    "value": "5.0",
+    "parents": [{ "id": "OPTIMIZED.DRUGS_1", "type": "DRUG", "date": null }]
+  },
+  {
+    "id": "OPTIMIZED.JOURNAL_4",
+    "type": "JOURNAL",
+    "value": "American journal of veterinary research",
+    "parents": []
+  },
+  {
+    "id": "OPTIMIZED.DRUGS_1",
+    "type": "DRUG",
+    "value": "TETRACYCLINE",
+    "parents": [
+      {
+        "id": "OPTIMIZED.JOURNAL_3",
+        "type": "JOURNAL",
+        "date": "2020-01-01 00:00:00"
+      },
+      {
+        "id": "OPTIMIZED.JOURNAL_5",
+        "type": "JOURNAL",
+        "date": "2020-01-01 00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "OPTIMIZED.PUBLICATION_6",
+    "type": "CLINICAL_TRIAL",
+    "value": "11.0",
+    "parents": [{ "id": "OPTIMIZED.DRUGS_6", "type": "DRUG", "date": null }]
+  },
+  {
+    "id": "OPTIMIZED.JOURNAL_9",
+    "type": "JOURNAL",
+    "value": "Journal of back and musculoskeletal rehabilitation",
+    "parents": []
+  },
+  {
+    "id": "OPTIMIZED.PUBLICATION_9",
+    "type": "CLINICAL_TRIAL",
+    "value": "2.0",
+    "parents": [{ "id": "OPTIMIZED.DRUGS_0", "type": "DRUG", "date": null }]
+  },
+  {
+    "id": "OPTIMIZED.PUBLICATION_10",
+    "type": "CLINICAL_TRIAL",
+    "value": "4.0",
+    "parents": [{ "id": "OPTIMIZED.DRUGS_1", "type": "DRUG", "date": null }]
+  },
+  {
+    "id": "OPTIMIZED.JOURNAL_3",
+    "type": "JOURNAL",
+    "value": "Journal of food protection",
+    "parents": []
+  },
+  {
+    "id": "OPTIMIZED.PUBLICATION_11",
+    "type": "CLINICAL_TRIAL",
+    "value": "9.0",
+    "parents": [{ "id": "OPTIMIZED.DRUGS_5", "type": "DRUG", "date": null }]
+  },
+  {
+    "id": "OPTIMIZED.JOURNAL_7",
+    "type": "JOURNAL",
+    "value": "Journal of photochemistry and photobiology. B, Biology",
+    "parents": []
+  },
+  {
+    "id": "OPTIMIZED.DRUGS_5",
+    "type": "DRUG",
+    "value": "ISOPRENALINE",
+    "parents": []
+  },
+  {
+    "id": "OPTIMIZED.PUBLICATION_12",
+    "type": "CLINICAL_TRIAL",
+    "value": "6.0",
+    "parents": [
+      { "id": "OPTIMIZED.DRUGS_1", "type": "DRUG", "date": null },
+      { "id": "OPTIMIZED.DRUGS_2", "type": "DRUG", "date": null }
+    ]
+  },
+  {
+    "id": "OPTIMIZED.JOURNAL_5",
+    "type": "JOURNAL",
+    "value": "Psychopharmacology",
+    "parents": [
+      {
+        "id": "OPTIMIZED.PUBLICATION_12",
+        "type": "PUBMED",
+        "date": "2020-01-01 00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "OPTIMIZED.DRUGS_2",
+    "type": "DRUG",
+    "value": "ETHANOL",
+    "parents": []
+  },
+  {
+    "id": "OPTIMIZED.PUBLICATION_13",
+    "type": "CLINICAL_TRIAL",
+    "value": "7.0",
+    "parents": [{ "id": "OPTIMIZED.DRUGS_4", "type": "DRUG", "date": null }]
+  },
+  {
+    "id": "OPTIMIZED.JOURNAL_6",
+    "type": "JOURNAL",
+    "value": "The journal of allergy and clinical immunology. In practice",
+    "parents": [
+      {
+        "id": "OPTIMIZED.PUBLICATION_14",
+        "type": "PUBMED",
+        "date": "2020-03-01 00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "OPTIMIZED.PUBLICATION_14",
+    "type": "CLINICAL_TRIAL",
+    "value": "8.0",
+    "parents": [{ "id": "OPTIMIZED.DRUGS_4", "type": "DRUG", "date": null }]
+  },
+  {
+    "id": "OPTIMIZED.PUBLICATION_15",
+    "type": "CLINICAL_TRIAL",
+    "value": "10.0",
+    "parents": [{ "id": "OPTIMIZED.DRUGS_6", "type": "DRUG", "date": null }]
+  },
+  {
+    "id": "OPTIMIZED.JOURNAL_8",
+    "type": "JOURNAL",
+    "value": "The journal of maternal-fetal & neonatal medicine",
+    "parents": []
+  },
+  {
+    "id": "OPTIMIZED.PUBLICATION_16",
+    "type": "CLINICAL_TRIAL",
+    "value": "3.0",
+    "parents": [{ "id": "OPTIMIZED.DRUGS_0", "type": "DRUG", "date": null }]
+  },
+  {
+    "id": "OPTIMIZED.JOURNAL_2",
+    "type": "JOURNAL",
+    "value": "The Journal of pediatrics",
+    "parents": []
+  }
+]

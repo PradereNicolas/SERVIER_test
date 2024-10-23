@@ -1,0 +1,534 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>areas package &mdash; Dataplatform  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Dataplatform
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">areas package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-areas.area">areas.area module</a><ul>
+<li><a class="reference internal" href="#areas.area.Area"><code class="docutils literal notranslate"><span class="pre">Area</span></code></a></li>
+<li><a class="reference internal" href="#areas.area.AreaType"><code class="docutils literal notranslate"><span class="pre">AreaType</span></code></a><ul>
+<li><a class="reference internal" href="#areas.area.AreaType.BUSINESS"><code class="docutils literal notranslate"><span class="pre">AreaType.BUSINESS</span></code></a></li>
+<li><a class="reference internal" href="#areas.area.AreaType.OPTIMIZED"><code class="docutils literal notranslate"><span class="pre">AreaType.OPTIMIZED</span></code></a></li>
+<li><a class="reference internal" href="#areas.area.AreaType.RAW"><code class="docutils literal notranslate"><span class="pre">AreaType.RAW</span></code></a></li>
+<li><a class="reference internal" href="#areas.area.AreaType.REFINED"><code class="docutils literal notranslate"><span class="pre">AreaType.REFINED</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#areas.area.DataFormat"><code class="docutils literal notranslate"><span class="pre">DataFormat</span></code></a><ul>
+<li><a class="reference internal" href="#areas.area.DataFormat.CSV"><code class="docutils literal notranslate"><span class="pre">DataFormat.CSV</span></code></a></li>
+<li><a class="reference internal" href="#areas.area.DataFormat.JSON"><code class="docutils literal notranslate"><span class="pre">DataFormat.JSON</span></code></a></li>
+<li><a class="reference internal" href="#areas.area.DataFormat.PICKLE"><code class="docutils literal notranslate"><span class="pre">DataFormat.PICKLE</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-areas.data_frame">areas.data_frame module</a><ul>
+<li><a class="reference internal" href="#areas.data_frame.Column"><code class="docutils literal notranslate"><span class="pre">Column</span></code></a><ul>
+<li><a class="reference internal" href="#areas.data_frame.Column.is_functional_key"><code class="docutils literal notranslate"><span class="pre">Column.is_functional_key</span></code></a></li>
+<li><a class="reference internal" href="#areas.data_frame.Column.name"><code class="docutils literal notranslate"><span class="pre">Column.name</span></code></a></li>
+<li><a class="reference internal" href="#areas.data_frame.Column.required"><code class="docutils literal notranslate"><span class="pre">Column.required</span></code></a></li>
+<li><a class="reference internal" href="#areas.data_frame.Column.type_"><code class="docutils literal notranslate"><span class="pre">Column.type_</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-areas.job">areas.job module</a><ul>
+<li><a class="reference internal" href="#areas.job.DefaultJob"><code class="docutils literal notranslate"><span class="pre">DefaultJob</span></code></a><ul>
+<li><a class="reference internal" href="#areas.job.DefaultJob.Source"><code class="docutils literal notranslate"><span class="pre">DefaultJob.Source</span></code></a><ul>
+<li><a class="reference internal" href="#areas.job.DefaultJob.Source.path"><code class="docutils literal notranslate"><span class="pre">DefaultJob.Source.path</span></code></a></li>
+<li><a class="reference internal" href="#areas.job.DefaultJob.Source.set_to_test"><code class="docutils literal notranslate"><span class="pre">DefaultJob.Source.set_to_test()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#areas.job.DefaultJob.extract"><code class="docutils literal notranslate"><span class="pre">DefaultJob.extract()</span></code></a></li>
+<li><a class="reference internal" href="#areas.job.DefaultJob.extract_csv"><code class="docutils literal notranslate"><span class="pre">DefaultJob.extract_csv()</span></code></a></li>
+<li><a class="reference internal" href="#areas.job.DefaultJob.extract_json"><code class="docutils literal notranslate"><span class="pre">DefaultJob.extract_json()</span></code></a></li>
+<li><a class="reference internal" href="#areas.job.DefaultJob.extract_pickle"><code class="docutils literal notranslate"><span class="pre">DefaultJob.extract_pickle()</span></code></a></li>
+<li><a class="reference internal" href="#areas.job.DefaultJob.start"><code class="docutils literal notranslate"><span class="pre">DefaultJob.start()</span></code></a></li>
+<li><a class="reference internal" href="#areas.job.DefaultJob.target_folder_path"><code class="docutils literal notranslate"><span class="pre">DefaultJob.target_folder_path</span></code></a></li>
+<li><a class="reference internal" href="#areas.job.DefaultJob.transform"><code class="docutils literal notranslate"><span class="pre">DefaultJob.transform()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-areas.process_data">areas.process_data module</a><ul>
+<li><a class="reference internal" href="#areas.process_data.process_data"><code class="docutils literal notranslate"><span class="pre">process_data()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-areas.utils">areas.utils module</a><ul>
+<li><a class="reference internal" href="#areas.utils.generate_functional_key"><code class="docutils literal notranslate"><span class="pre">generate_functional_key()</span></code></a></li>
+<li><a class="reference internal" href="#areas.utils.generate_technical_id"><code class="docutils literal notranslate"><span class="pre">generate_technical_id()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-areas">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Dataplatform</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">areas package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/areas.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="areas-package">
+<h1>areas package<a class="headerlink" href="#areas-package" title="Link to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="areas.business.html">areas.business package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="areas.business.html#module-areas.business">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="areas.business.html#areas.business.BusinessArea"><code class="docutils literal notranslate"><span class="pre">BusinessArea</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="areas.business.html#areas.business.BusinessArea.process_data"><code class="docutils literal notranslate"><span class="pre">BusinessArea.process_data()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="areas.business.html#areas.business.DataType"><code class="docutils literal notranslate"><span class="pre">DataType</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="areas.business.html#areas.business.DataType.MENTION"><code class="docutils literal notranslate"><span class="pre">DataType.MENTION</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="areas.optimized.html">areas.optimized package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="areas.optimized.html#module-areas.optimized">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="areas.optimized.html#areas.optimized.DataType"><code class="docutils literal notranslate"><span class="pre">DataType</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="areas.optimized.html#areas.optimized.DataType.DRUGS"><code class="docutils literal notranslate"><span class="pre">DataType.DRUGS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="areas.optimized.html#areas.optimized.DataType.JOURNAL"><code class="docutils literal notranslate"><span class="pre">DataType.JOURNAL</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="areas.optimized.html#areas.optimized.DataType.PUBLICATION"><code class="docutils literal notranslate"><span class="pre">DataType.PUBLICATION</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="areas.optimized.html#areas.optimized.OptimizedArea"><code class="docutils literal notranslate"><span class="pre">OptimizedArea</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="areas.optimized.html#areas.optimized.OptimizedArea.process_data"><code class="docutils literal notranslate"><span class="pre">OptimizedArea.process_data()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="areas.raw.html">areas.raw package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="areas.raw.html#module-areas.raw">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="areas.raw.html#areas.raw.DataType"><code class="docutils literal notranslate"><span class="pre">DataType</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="areas.raw.html#areas.raw.DataType.CLINICAL_TRIAL"><code class="docutils literal notranslate"><span class="pre">DataType.CLINICAL_TRIAL</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="areas.raw.html#areas.raw.DataType.DRUGS"><code class="docutils literal notranslate"><span class="pre">DataType.DRUGS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="areas.raw.html#areas.raw.DataType.PUBMED"><code class="docutils literal notranslate"><span class="pre">DataType.PUBMED</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="areas.raw.html#areas.raw.RawArea"><code class="docutils literal notranslate"><span class="pre">RawArea</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="areas.raw.html#areas.raw.RawArea.process_data"><code class="docutils literal notranslate"><span class="pre">RawArea.process_data()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="areas.refined.html">areas.refined package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="areas.refined.html#module-areas.refined">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="areas.refined.html#areas.refined.DataType"><code class="docutils literal notranslate"><span class="pre">DataType</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="areas.refined.html#areas.refined.DataType.CLINICAL_TRIAL"><code class="docutils literal notranslate"><span class="pre">DataType.CLINICAL_TRIAL</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="areas.refined.html#areas.refined.DataType.DRUGS"><code class="docutils literal notranslate"><span class="pre">DataType.DRUGS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="areas.refined.html#areas.refined.DataType.JOURNAL"><code class="docutils literal notranslate"><span class="pre">DataType.JOURNAL</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="areas.refined.html#areas.refined.DataType.PUBMED"><code class="docutils literal notranslate"><span class="pre">DataType.PUBMED</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="areas.refined.html#areas.refined.RefinedArea"><code class="docutils literal notranslate"><span class="pre">RefinedArea</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="areas.refined.html#areas.refined.RefinedArea.process_data"><code class="docutils literal notranslate"><span class="pre">RefinedArea.process_data()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-areas.area">
+<span id="areas-area-module"></span><h2>areas.area module<a class="headerlink" href="#module-areas.area" title="Link to this heading"></a></h2>
+<p>Areas module init</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="areas.area.Area">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">areas.area.</span></span><span class="sig-name descname"><span class="pre">Area</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">area_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#areas.area.AreaType" title="areas.area.AreaType"><span class="pre">AreaType</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#areas.area.Area" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Generic area class</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="areas.area.AreaType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">areas.area.</span></span><span class="sig-name descname"><span class="pre">AreaType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#areas.area.AreaType" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Area type enum class</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="areas.area.AreaType.BUSINESS">
+<span class="sig-name descname"><span class="pre">BUSINESS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'business'</span></em><a class="headerlink" href="#areas.area.AreaType.BUSINESS" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="areas.area.AreaType.OPTIMIZED">
+<span class="sig-name descname"><span class="pre">OPTIMIZED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'optimized'</span></em><a class="headerlink" href="#areas.area.AreaType.OPTIMIZED" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="areas.area.AreaType.RAW">
+<span class="sig-name descname"><span class="pre">RAW</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'raw'</span></em><a class="headerlink" href="#areas.area.AreaType.RAW" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="areas.area.AreaType.REFINED">
+<span class="sig-name descname"><span class="pre">REFINED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'refined'</span></em><a class="headerlink" href="#areas.area.AreaType.REFINED" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="areas.area.DataFormat">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">areas.area.</span></span><span class="sig-name descname"><span class="pre">DataFormat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#areas.area.DataFormat" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Data fromat enum class</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="areas.area.DataFormat.CSV">
+<span class="sig-name descname"><span class="pre">CSV</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'csv'</span></em><a class="headerlink" href="#areas.area.DataFormat.CSV" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="areas.area.DataFormat.JSON">
+<span class="sig-name descname"><span class="pre">JSON</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'json'</span></em><a class="headerlink" href="#areas.area.DataFormat.JSON" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="areas.area.DataFormat.PICKLE">
+<span class="sig-name descname"><span class="pre">PICKLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'pkl'</span></em><a class="headerlink" href="#areas.area.DataFormat.PICKLE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-areas.data_frame">
+<span id="areas-data-frame-module"></span><h2>areas.data_frame module<a class="headerlink" href="#module-areas.data_frame" title="Link to this heading"></a></h2>
+<p>Dataframe utils module</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="areas.data_frame.Column">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">areas.data_frame.</span></span><span class="sig-name descname"><span class="pre">Column</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">required</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_functional_key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#areas.data_frame.Column" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Dataframe column properties</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="areas.data_frame.Column.is_functional_key">
+<span class="sig-name descname"><span class="pre">is_functional_key</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#areas.data_frame.Column.is_functional_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="areas.data_frame.Column.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#areas.data_frame.Column.name" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="areas.data_frame.Column.required">
+<span class="sig-name descname"><span class="pre">required</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#areas.data_frame.Column.required" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="areas.data_frame.Column.type_">
+<span class="sig-name descname"><span class="pre">type_</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">type</span></em><a class="headerlink" href="#areas.data_frame.Column.type_" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-areas.job">
+<span id="areas-job-module"></span><h2>areas.job module<a class="headerlink" href="#module-areas.job" title="Link to this heading"></a></h2>
+<p>Job module init</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="areas.job.DefaultJob">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">areas.job.</span></span><span class="sig-name descname"><span class="pre">DefaultJob</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target_area</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#areas.area.AreaType" title="areas.area.AreaType"><span class="pre">AreaType</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_data_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_schema</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#areas.data_frame.Column" title="areas.data_frame.Column"><span class="pre">Column</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sources</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#areas.job.DefaultJob.Source" title="areas.job.DefaultJob.Source"><span class="pre">Source</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_test</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#areas.job.DefaultJob" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>Default job class</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="areas.job.DefaultJob.Source">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Source</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">area</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#areas.area.AreaType" title="areas.area.AreaType"><span class="pre">AreaType</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="areas.raw.html#areas.raw.DataType" title="areas.raw.DataType"><span class="pre">DataType</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_format</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#areas.area.DataFormat" title="areas.area.DataFormat"><span class="pre">DataFormat</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_test</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#areas.job.DefaultJob.Source" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Data source for job</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="areas.job.DefaultJob.Source.path">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#areas.job.DefaultJob.Source.path" title="Link to this definition"></a></dt>
+<dd><p>Get source file path</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Source file path</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="areas.job.DefaultJob.Source.set_to_test">
+<span class="sig-name descname"><span class="pre">set_to_test</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#areas.job.DefaultJob.Source.set_to_test" title="Link to this definition"></a></dt>
+<dd><p>Change class properties to be test source</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="areas.job.DefaultJob.extract">
+<span class="sig-name descname"><span class="pre">extract</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#areas.job.DefaultJob.extract" title="Link to this definition"></a></dt>
+<dd><p>Generic method to extract data from source file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>Path</em>) – Path of the file to be extracted</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>pandas DataFrame containing data</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="areas.job.DefaultJob.extract_csv">
+<span class="sig-name descname"><span class="pre">extract_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#areas.job.DefaultJob.extract_csv" title="Link to this definition"></a></dt>
+<dd><p>CSV extract method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>Path</em>) – Path of the file to be extracted</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>pandas DataFrame containing data</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="areas.job.DefaultJob.extract_json">
+<span class="sig-name descname"><span class="pre">extract_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#areas.job.DefaultJob.extract_json" title="Link to this definition"></a></dt>
+<dd><p>JSON extract method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>Path</em>) – Path of the file to be extracted</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>pandas DataFrame containing data</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="areas.job.DefaultJob.extract_pickle">
+<span class="sig-name descname"><span class="pre">extract_pickle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#areas.job.DefaultJob.extract_pickle" title="Link to this definition"></a></dt>
+<dd><p>Pickle extract method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>Path</em>) – Path of the file to be extracted</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>pandas DataFrame containing data</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="areas.job.DefaultJob.start">
+<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">DataFrame</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">DataFrame</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#areas.job.DefaultJob.start" title="Link to this definition"></a></dt>
+<dd><p>STart job method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Correct dataframe and reject dataframe in case of test, else None</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Optional[Tuple[pd.DataFrame, pd.DataFrame]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="areas.job.DefaultJob.target_folder_path">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">target_folder_path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#areas.job.DefaultJob.target_folder_path" title="Link to this definition"></a></dt>
+<dd><p>Target folder</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Targer folder</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="areas.job.DefaultJob.transform">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#areas.job.DefaultJob.transform" title="Link to this definition"></a></dt>
+<dd><p>Default method to be implemented in child classes</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-areas.process_data">
+<span id="areas-process-data-module"></span><h2>areas.process_data module<a class="headerlink" href="#module-areas.process_data" title="Link to this heading"></a></h2>
+<p>Workflow process</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="areas.process_data.process_data">
+<span class="sig-prename descclassname"><span class="pre">areas.process_data.</span></span><span class="sig-name descname"><span class="pre">process_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">refined_area</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="areas.refined.html#areas.refined.RefinedArea" title="areas.refined.RefinedArea"><span class="pre">RefinedArea</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimized_area</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="areas.optimized.html#areas.optimized.OptimizedArea" title="areas.optimized.OptimizedArea"><span class="pre">OptimizedArea</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">business_area</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="areas.business.html#areas.business.BusinessArea" title="areas.business.BusinessArea"><span class="pre">BusinessArea</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#areas.process_data.process_data" title="Link to this definition"></a></dt>
+<dd><p>Process data from raw area to optimized area</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>refined_area</strong> (<a class="reference internal" href="areas.refined.html#areas.refined.RefinedArea" title="areas.refined.RefinedArea"><em>RefinedArea</em></a>) – Refined area</p></li>
+<li><p><strong>optimized_area</strong> (<a class="reference internal" href="areas.optimized.html#areas.optimized.OptimizedArea" title="areas.optimized.OptimizedArea"><em>OptimizedArea</em></a>) – Optimized area</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-areas.utils">
+<span id="areas-utils-module"></span><h2>areas.utils module<a class="headerlink" href="#module-areas.utils" title="Link to this heading"></a></h2>
+<p>Data processing utils module</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="areas.utils.generate_functional_key">
+<span class="sig-prename descclassname"><span class="pre">areas.utils.</span></span><span class="sig-name descname"><span class="pre">generate_functional_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_frame</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Series</span></span></span><a class="headerlink" href="#areas.utils.generate_functional_key" title="Link to this definition"></a></dt>
+<dd><p>Generate a functional key from tables</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data_frame</strong> (<em>pd.DataFrame</em>) – Dataframe</p></li>
+<li><p><strong>columns</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – List of columns to use for functional key</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>New column</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.Series</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="areas.utils.generate_technical_id">
+<span class="sig-prename descclassname"><span class="pre">areas.utils.</span></span><span class="sig-name descname"><span class="pre">generate_technical_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">area</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#areas.area.AreaType" title="areas.area.AreaType"><span class="pre">AreaType</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_frame</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#areas.utils.generate_technical_id" title="Link to this definition"></a></dt>
+<dd><p>Create id for data frames</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data_frame</strong> (<em>pd.DataFrame</em>) – Dataframe</p></li>
+<li><p><strong>area</strong> (<a class="reference internal" href="#areas.area.AreaType" title="areas.area.AreaType"><em>AreaType</em></a>) – Area of table</p></li>
+<li><p><strong>data_type</strong> (<em>Any</em>) – Instance</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dataframe with id</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-areas">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-areas" title="Link to this heading"></a></h2>
+<p>Area module init</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Nicolas Pradere.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

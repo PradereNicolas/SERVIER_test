@@ -1,0 +1,1 @@
+# To run tests use: PYTHONPATH=$(pwd) poetry run pytest

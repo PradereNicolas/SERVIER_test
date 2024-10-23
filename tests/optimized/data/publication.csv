@@ -1,0 +1,18 @@
+id,date,functional_id,journal_id,publication_type,title
+OPTIMIZED.PUBLICATION_0,2020-01-01,NCT04153396,OPTIMIZED.JOURNAL_1,CLINICAL_TRIAL,Preemptive Infiltration With Betamethasone and Ropivacaine for Postoperative Pain in Laminoplasty or  Laminectomy
+OPTIMIZED.PUBLICATION_1,2020-01-01,NCT01967433,OPTIMIZED.JOURNAL_0,CLINICAL_TRIAL,Use of Diphenhydramine as an Adjunctive Sedative for Colonoscopy in Patients Chronically on Opioids
+OPTIMIZED.PUBLICATION_2,2020-01-01,NCT04189588,OPTIMIZED.JOURNAL_0,CLINICAL_TRIAL,Phase 2 Study IV QUZYTTIR™ (Cetirizine Hydrochloride Injection) vs V Diphenhydramine
+OPTIMIZED.PUBLICATION_3,2020-01-01,NCT04237091,OPTIMIZED.JOURNAL_0,CLINICAL_TRIAL,Feasibility of a Randomized Controlled Clinical Trial Comparing the Use of Cetirizine to Replace Diphenhydramine in the Prevention of Reactions Related to Paclitaxel
+OPTIMIZED.PUBLICATION_4,2020-04-27,NCT04188184,OPTIMIZED.JOURNAL_0,CLINICAL_TRIAL,Tranexamic Acid Versus Epinephrine During Exploratory Tympanotomy
+OPTIMIZED.PUBLICATION_5,2020-01-02,5.0,OPTIMIZED.JOURNAL_4,PUBMED,Appositional Tetracycline bone formation rates in the Beagle.
+OPTIMIZED.PUBLICATION_6,2020-01-01,11.0,OPTIMIZED.JOURNAL_9,PUBMED,Effects of Topical Application of Betamethasone on Imiquimod-induced Psoriasis-like Skin Inflammation in Mice.
+OPTIMIZED.PUBLICATION_7,2020-01-03,12.0,OPTIMIZED.JOURNAL_9,PUBMED,"Comparison of pressure release, phonophoresis and dry needling in treatment of latent myofascial trigger point of upper trapezius muscle."
+OPTIMIZED.PUBLICATION_8,2019-01-01,1.0,OPTIMIZED.JOURNAL_0,PUBMED,"A 44-year-old man with erythema of the face diphenhydramine, neck, and chest, weakness, and palpitations"
+OPTIMIZED.PUBLICATION_9,2019-01-01,2.0,OPTIMIZED.JOURNAL_0,PUBMED,"An evaluation of benadryl, pyribenzamine, and other so-called diphenhydramine antihistaminic drugs in the treatment of allergy."
+OPTIMIZED.PUBLICATION_10,2020-01-01,4.0,OPTIMIZED.JOURNAL_3,PUBMED,Tetracycline Resistance Patterns of Lactobacillus buchneri Group Strains.
+OPTIMIZED.PUBLICATION_11,2020-01-01,9.0,OPTIMIZED.JOURNAL_7,PUBMED,Gold nanoparticles synthesized from Euphorbia fischeriana root by green route method alleviates the isoprenaline hydrochloride induced myocardial infarction in rats.
+OPTIMIZED.PUBLICATION_12,2020-01-01,6.0,OPTIMIZED.JOURNAL_5,PUBMED,"Rapid reacquisition of contextual fear following extinction in mice: effects of amount of extinction, tetracycline acute ethanol withdrawal, and ethanol intoxication."
+OPTIMIZED.PUBLICATION_13,2020-02-01,7.0,OPTIMIZED.JOURNAL_6,PUBMED,The High Cost of Epinephrine Autoinjectors and Possible Alternatives.
+OPTIMIZED.PUBLICATION_14,2020-03-01,8.0,OPTIMIZED.JOURNAL_6,PUBMED,Time to epinephrine treatment is associated with the risk of mortality in children who achieve sustained ROSC after traumatic out-of-hospital cardiac arrest.
+OPTIMIZED.PUBLICATION_15,2020-01-01,10.0,OPTIMIZED.JOURNAL_8,PUBMED,Clinical implications of umbilical artery Doppler changes after betamethasone administration
+OPTIMIZED.PUBLICATION_16,2019-01-02,3.0,OPTIMIZED.JOURNAL_2,PUBMED,Diphenhydramine hydrochloride helps symptoms of ciguatera fish poisoning.

@@ -1,0 +1,12 @@
+[MASTER]
+init-hook='import sys; sys.path.append(".")'
+extension-pkg-whitelist=pydantic
+
+[FORMAT]
+max-line-length=240
+
+[TYPECHECK]
+ignored-modules=alembic.op
+
+[MESSAGES CONTROL]
+disable=cyclic-import

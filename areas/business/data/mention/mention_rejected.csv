@@ -1,0 +1,2 @@
+reject_reason,drug,drug_id,functional_id,journal_id,journal_name,publication_date,publication_id,publication_type,title
+Column functional_id should not be empty,ATROPINE,OPTIMIZED.DRUGS_3,,,,,,,

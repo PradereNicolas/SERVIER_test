@@ -1,0 +1,4 @@
+reject_reason,clinical_trial_id,date,journal,scientific_title
+Column scientific_title should not be empty,NCT04237090,1 January 2020,Journal of emergency nursing,  
+Column journal should not be empty,NCT03490942,25/05/2020,,Glucagon Infusion in T1D Patients With Recurrent Severe Hypoglycemia: Effects on Counter-Regulatory Responses
+Column clinical_trial_id should not be empty,,25/05/2020,Journal of emergency nursing,Glucagon Infusion in T1D Patients With Recurrent Severe Hypoglycemia: Effects on Counter-Regulatory Responses
